@@ -28,7 +28,8 @@
 // _attenuation_table is from the Levi Larsen app
 static float _attenuation_table[] = { 1.0e0, 1.0e1, 1.0e2, 1.0e3 }; // We are only sure for these
 static float _volt_table[] = {
-	2.0e-2, 5.0e-2, // 10 mV
+	2.0e-3, 5.0e-3, // 2 mV
+	1.0e-2, 2.0e-2, 5.0e-2, // 10 mV
 	1.0e-1, 2.0e-1, 5.0e-1, // 100 mV
 	1.0e+0, 2.0e+0, 5.0e+0, // 1 V
 	1.0e+1, 2.0e+1, 5.0e+1, // 10 V
