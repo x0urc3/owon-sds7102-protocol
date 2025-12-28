@@ -365,7 +365,7 @@ static float sample_to_volt(HEADER_st *header, uint8_t channel, uint32_t sample)
 		return -1.0;
 
 	val = header->channels[channel]->data[sample];
-	return val * 2.0 * header->channels[channel]->voltsdiv / 5.0;
+	return val / 127.0 * 5.0 * header->channels[channel]->voltsdiv;
 }
 
 static void volt_scale_to_string(float volt_scale, uint32_t *val, const char **unit)
